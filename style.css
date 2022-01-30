@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: black;
+    font-size: 35px;
+    color: whitesmoke;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress {
+    height: 5px;
+    position: fixed;
+    left: 0;
+    top: 10vh;
+    right: 0;
+}
+
+.progress-bar {
+    background-color: red;
+    height: 100%;
+    transition: all ease .5s;
+}
+
+main {
+    height: 80vh;
+    width: 80%;
+    background-color: #292929;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80px auto;
+    margin-top: 5vh;
+}
+
+.title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: whitesmoke;
+}
+
+.pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 350px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options ul {
+    list-style: none;
+    font-size: 22px;
+    width: 60%;
+}
+
+.options ul li {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: whitesmoke;
+    background-color: grey;
+    padding: 7px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.options ul li:hover {
+    background-color: #474A51;
+}
+
+.options span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: black;
+    margin-right: 20px;
+}
+
+.pontuacao {
+    position: fixed;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 400px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+.pontuacao img {
+    width: 200px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.nivel {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.pctg {
+    font-size: 22px;
+    color: rgb(25, 170, 6);
+}
+
+button {
+    border-radius: 8px;
+    width: 25%;
+    height: 30px;
+    background-color: darkgrey;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: whitesmoke;
+}
